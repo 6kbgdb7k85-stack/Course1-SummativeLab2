@@ -1,0 +1,47 @@
+.hidden {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {  
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+body {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: silver;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*Split the view between calculator and history like in calculator apps*/
+.calculator-container {
+    width: 50%;
+}
+
+.history-container {
+    width: 50%;
+}
+
+/*Indents the first row to be inline with the second input much like when doing math by hand*/
+.indented-input {
+    margin-left: 2.72rem;
+}
+
+br {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <title>JavaScript Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to JavaScript Calculator</h1>
+    </header>
+    <div class="flex-container">
+        <div class="calculator-container">
+            <input type="number" name="num1" class="indented-input">
+            <br>
+            <select name="operator" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" name="num2">
+            <br>
+            <button onclick="doMath()">Calculate</button>
+            <button onclick="toggleHistoryView()">Toggle History</button>
+            <br>
+            <span>Result (updates on pressing "Calculate"):</span>
+            <span id="result"></span>
+        </div>
+        <div class="history-container">
+            <p id="history" class="hidden">History</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
