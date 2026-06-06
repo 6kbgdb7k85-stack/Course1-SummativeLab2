@@ -60,3 +60,9 @@ br {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
