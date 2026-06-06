@@ -17,16 +17,18 @@
     </header>
     <div class="flex-container">
         <div class="calculator-container">
-            <input type="number" name="num1" class="indented-input">
-            <br>
-            <select name="operator" id="operator">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-            </select>
-            <input type="number" name="num2">
-            <br>
+            <div class="inputs-row">
+                <input type="number" name="num1" class="indented-input">
+                <br>
+                <select name="operator" id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" name="num2">
+                <br>
+            </div>
             <button onclick="doMath()">Calculate</button>
             <button onclick="toggleHistoryView()">Toggle History</button>
             <br>

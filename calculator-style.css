@@ -26,6 +26,10 @@ body {
     flex-wrap: wrap;
 }
 
+.inputs-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
 
 /*Split the view between calculator and history like in calculator apps*/
 .calculator-container {
@@ -36,10 +40,21 @@ body {
     width: 50%;
 }
 
-/*Indents the first row to be inline with the second input much like when doing math by hand*/
+/*align the number inputs with the operator to the left of the second number much like doing it by hand*/
 .indented-input {
-    margin-left: 2.72rem;
+    grid-column: 2;
+    width: 50%;
 }
+
+#operator {
+    grid-column: 1;
+}
+
+.calculator-container input[name="num2"] {
+    grid-column: 2;
+    width: 50%;
+}
+
 
 br {
     margin-top: 5px;
