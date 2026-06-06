@@ -50,7 +50,7 @@ body {
     margin: 0.5em 0 1em;
 }
 
-footer {
+footer a {
     position: absolute;
     top: 0;
     left: 0;
